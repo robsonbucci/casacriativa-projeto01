@@ -71,4 +71,4 @@ server.get("/ideias", (req, res) => {
   const reversedIdeas = [...ideas];
   return res.render("ideias.html", { ideas: reversedIdeas.reverse() });
 })
-// server.listen(3000);
+server.listen(process.env.PORT || 3000);
